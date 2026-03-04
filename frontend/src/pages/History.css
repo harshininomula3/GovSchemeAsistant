@@ -1,0 +1,142 @@
+.history-page {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    min-height: 100vh;
+}
+
+.history-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.history-header h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.history-header p {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.history-section {
+    margin-bottom: 36px;
+}
+
+.section-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.section-top h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.empty-state {
+    padding: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.empty-state p {
+    color: var(--text-dim);
+    font-size: 13px;
+    max-width: 360px;
+}
+
+/* Bookmarks */
+.bookmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+}
+
+.bookmark-card {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bookmark-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bookmark-remove {
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    transition: all 0.2s;
+}
+
+.bookmark-remove:hover {
+    background: rgba(239, 68, 68, 0.15);
+}
+
+.bookmark-card h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* History list */
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.history-item {
+    padding: 16px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.history-item:hover {
+    border-color: var(--accent);
+}
+
+.history-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.history-query {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.5;
+}
+
+.history-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.tag-small {
+    background: var(--accent-glow);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 99px;
+    font-size: 10px;
+}
